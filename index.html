@@ -1,63 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Web pagge desing</title>
+	<title>Portfolio website</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
-    <div class="main">
-        <div class="navbar">
-            <div class="icon">
-                <h2 class="logo">PraRoz</h2>
-            </div>
+<div class="header">
+	<nav>
+		<h2 class="logo">Portfo<span>lio</span></h2>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#about-section">About Me</a></li>
+			<li><a href="#skill-section">Skills</a></li>
+			<li><a href="#project-section">Projects</a></li>
+			<li><a href="#contact-me-section">Contact Me</a></li>
+		</ul>
+		<a href="Lupu Mihai Sebastian.pdf" class="btn" target="_blank">My resume</a>
+	</nav>
+</div>
 
-            <div class="menu">
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Design</a></li>
-                    <li><a href="#">Comtact</a></li>
-                </ul>
+	<!----hero Section start---->
 
-            </div>
-            <div class="search">
-                <input class="srch" type="search" name="" placeholder="Type to text">
-                <a href="#"> <button class="btn">Search</button></a>
-            </div>
+	<div class="hero">
+		<div class="content">
+			<h4>Hello, my name is</h4>
+			<h1>Lupu <span>Mihai-Sebastian</span></h1>
+			<h3>My dream is to be Frontend Developer.</h3>
+		</div>
+	</div>
 
-        </div>
-        <div class="content">
-              <h1>Web Design & <br><span>Deveplopment</span><br>Course</h1>  
-              <p class="par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat at eum, nihil aliquam <br> distinctio magnam, asperiores saepe aliquid nam vero, <br>
-                  ut repellat unde ratione beatae quae iste hic ipsum modi!</p>
+	<!----About section start---->
 
-                  <button class="cn"><a href="#">JOIN US</a></button>
+	<section id="about-section" class="about">
+		<div class="main">
+			<img src="img/lupumihai.jpeg">
+			<div class="about-text">
+				<h2>About Me</h2>
+				<h5>Junior Frontend <span>Developer</span></h5>
+				<p>I am a persevering young man, communicative, fast learner and eager for new experiences.
+					 I graduated UPG Ploiești, the faculty of mechanical and electrical engineering. I'm highly interested in IT and programming jobs.
+					 I want to surpass myself and learn new things. 
+					I am a junior front-end developer.I can provide clean code and pixel perfect design. 
+					I also make the website more & more interactive with web animations.
+					A responsive design makes your website accessible to all users, regardless of their device.</p>
+				<!-- <button type="button">Let's Talk</button> -->
+			</div>
+		</div>
+	</section>
+<section id="skill-section">
+	<div class="container">
+		<div class="col">
+		  <h2 class="titulo">Skills</h2>
+		  <ul class="skill">
+			<li><span class="blueline html"></span><em>HTML</em></li>
+			<li><span class="blueline css"></span><em>CSS</em></li>
+			<li><span class="blueline javascript"></span><em>Javascript</em></li> 
+		  </ul>
+		</div>
+			<div class="col">
+		  <h2 class="plataformas titulo">Tools</h2>
+		  <ul class="skill">
+			<li><span class="greenline vscode"></span><em>VsCode</em></li>
+			<li><span class="greenline codepen"></span><em>CodePen</em></li>n
+			<li><span class="greenline dreamweaver"></span><em>DreamWeaver</em></li>
+		  </ul>
+		</div>
+			<div class="col">
+		  <h2 class="programas titulo">Certificates</h2>
+		  <ul class="skill">
+			<li><span class="redline javascript1"></span><em>JavaScript Fundamentals at TelecomAcademy</em></li>
+			<li><span class="redline javascript2"></span><em>Javascript from Udemy</em></li>
+			<li><span class="redline freecodecamp"></span><em>Free Code Camp</em></li>
+		   
+		  </ul>
+		</div>
+	  </div>
+	</section>
 
-                  <div class="form">
-                      <h2>Login Here</h2>
-                      <input  type="email" name="email" placeholder="Enter your email">
-                      <input type="password" name="" placeholder="Enter your password">
-                      <button class="btnn"><a href="#">Login</a></button>
-                      
-                      <p class="link">Don't have an account <br>
-                      <a href="#">Sign up here</a></p>
-                      <p class="liw">Log in with</p>
+<!---Projects-->
+<section id="project-section">
+	  <div class="container2">
+		<div class="card">
+			<a href="https://competent-goldwasser-fd8924.netlify.app/"  target="_blank"><img src="img/img1.png"></a>
+		  <div class="card__head">Scss Site</div>
+		</div>
+		<div class="card">
+			<a href="https://loving-kowalevski-a3c0cf.netlify.app/"  target="_blank"><img src="img/img2.jpeg"></a>
+		  <div class="card__head">Web site</div>
+		</div>
+		<div class="card">
+			<a href="https://inspiring-galileo-8332b9.netlify.app/"  target="_blank"><img src="img/img3.jpeg"></a>
+		  <div class="card__head">Profile card</div>
+		</div>
+		<div class="card">
+			<a href="https://cocky-shaw-0d25e2.netlify.app/"  target="_blank"> <img src="img/img4.jpeg"></a>
+		  <div class="card__head">Manage landing page</div>
+		</div>
+		<div class="card">
+			<a href="https://trusting-panini-5f7e9e.netlify.app/"  target="_blank"><img src="img/img5.jpeg"></a>
+		  <div class="card__head">Card</div>
+		</div>
 
-                      <div class="icons">
-                          <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-                          <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
-                          <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
-                          <a href="#"><ion-icon name="logo-google"></ion-icon></a>
-                          <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
-                      </div>
-                  </div>
-        </div>
-    </div> 
+		<div class="card">
+			<a href="https://fervent-thompson-bd7b6f.netlify.app/"  target="_blank"><img src="img/img6.png"></a>
+		  <div class="card__head">Poke Api</div>
+		</div>
+	  </div>
+	</section>
+	<!------Contact Me------>
+	<div class="contact-me">
+		<p>For More Beautiful Website.</p>
+		<div class="bttn">
+	<div class="btn1">
+		<a class="button-two" href="https://github.com/MihaiLupu1995?tab=repositories" target="_blank">GitHub</a>
+	</div>
+	<div class="btn2">
+		<a class="button-two" href="https://app.netlify.com/teams/mihailupu1995/overview" target="_blank">NetyFly</a>
+	</div>
+	</div>
+	</div>
 
-    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+	<!------footer start--------->
+	<section id="contact-me-section">
+	<footer>
+		<p>Lupu Mihai-Sebastian</p>
+		<p>You can visit my linkedin</p>
+		<div class="social">
+			<a href="https://www.linkedin.com/in/mihai-sebastian-lupu-bbba271b5?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B7NdYXrusStu1Os9C%2FdeJow%3D%3D" target="_blank"><i class="fab fa-linkedin"></i></a>
+		</div>
+		<p class="end">CopyRight By Lupu Mihai-Sebastian</p>
+	</footer>
+</section>
+
+
+
 </body>
 </html>
